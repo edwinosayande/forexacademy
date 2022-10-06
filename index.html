@@ -1,0 +1,513 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+    <title>Easy Trade</title>
+
+</head>
+<body>
+    <!-- navigation section -->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background: #f9b01fec">
+        <div class="container-fluid">
+            <a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="navbar-brand font-monospace text-primary">Easy Trade Academy
+                <img src="images/logo.jpg" alt="logo" width="35px"></a>
+                <h5 id="time" class="text-light"></h5>
+            <button 
+            type="button" 
+            class="navbar-toggler" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-uppercase text-white">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link text-uppercase text-white">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Services" class="nav-link text-uppercase text-white">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contact" class="nav-link text-uppercase text-white">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#contact" class="nav-link dropdown-toggle text-uppercase text-white" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu">
+                            <a href="https://wa.me/message/X7L5WPSQYNKBI1" class="dropdown-item">Free Strategies</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://wa.me/message/X7L5WPSQYNKBI1" class="dropdown-item">Courses</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="dropdown-item">Market Analysis</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://wa.me/message/X7L5WPSQYNKBI1"class="dropdown-item">Mentorship</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#"class="dropdown-item">Terms and Condition</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="vh-100" style="background: url(images/forexroom2.jpg) center/cover no-repeat;">
+        <div class="container mt-5 pt-5 h-25">
+            <div class="h4 text-light font-monospace text-shadow animate-text-right">Tips and Secrets for Easy Trading</div>
+            <h1 class="display-1 text-white text-shadow animate-text-right-3sc">
+                Get Exclusive Boom&Crash Tips, And Tricks That I Only Share With Email Subscribers!
+            </h1>
+            <button class="btn btn-lg btn-primary shadow mt-3 animate-text-right-4sc" 
+            data-bs-toggle="modal"
+            data-bs-target="#subscribe">Subscribe</button>
+        </div>
+          <!-- <header> get started content -->
+            <div 
+            class="modal fade" 
+            id="subscribe"
+            tabindex="-1"
+            aria-labelledby="subcribeLabel"
+            aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscribeLabel">New Message</h5>
+                    <button 
+                    class="btn-close" 
+                    type="button"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-monospace text-info"><strong>Hey There!</strong></p>
+                    <p class="mb-5 text-monospace">Thank you for signing to our Great  <a href="https://chat.whatsapp.com/EYy5Smeatey0LQ7U7xSXie">Boom&Crash</a> List.  In just few minutes you'll be able to access our Boom&Crash beginners Corner Guides , That Will Help you Start your successfully 
+                        Trading journey without Any Frequent mistake. </p>
+                        <p class="mb-3 text-monospace">Once you've hit the "Subscribe" button below look out for a couple of quick emails from me to confirm your subscription. </p>
+                    <form
+                    id="formInput">
+                        <div class="mb-3">
+                            <label for="" class="col-4">First Name</label>
+                            <input type="text" name="firstname" class="form-control" placeholder="first name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-4">Last Name</label>
+                            <input type="text" name="lastname" class="form-control" placeholder="last name" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-4">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-4">Phone Number</label>
+                            <input type="number" name="phonenumber" class="form-control" placeholder="phone number" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-4">Subcription Date</label>
+                            <input type="date" name="date" class="form-control" />
+                        </div>
+                        <div class="modal-footer">
+                            <button 
+                            class="btn btn-danger" 
+                            type="button"
+                            data-bs-dismiss="modal">
+                            cancel
+                        </button>
+                        <button 
+                            class="btn btn-primary" 
+                            type="submit" value="Submit"><a href="mailto:easytradeacademy2@gmail.com" class="text-light text-decoration-none">
+                            Submit</a>
+                        </button>
+                    </div>
+                    </form>
+                </div>
+              
+            </div> 
+        </div>
+    </div>
+    </header>
+  
+
+    <!-- about -->
+    <section id="about" class="container mt-5 pt5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4 class="font-monospace my-5">About Us</h4>
+                <h3 class="display-1">Easy Trade Academy Growth in Business</h3>
+            </div>
+        </div>
+        <div class="card border-0 my-3 text-white mx-auto"
+        style="max-width: 1400px; background: #f9b01fec">
+        <div class="row g-0">
+    <div class="col-md-6">
+        <img src="images/pastor.png" alt="pastorpics" class="card-img-top mt-3" width="10px" />
+    </div>
+    <div class="col-md-6">
+        <div class="card-body mt-3 p-2 text-center">
+            <h5 class="card-title fs-5 font-monospace">Who We Are</h5>
+            <p class="card-text fs-1 mt-5">We are a Group of Experts and Professional Boom&crash Traders, 
+                we try as much as we can to make sure we Help 
+                all Struggling Traders and make sure they Excel and make money Consistently in the Financial forex market</p>
+                <button 
+                class="btn btn-light mt-3 shadow" 
+                type="button" 
+                data-bs-toggle="modal"
+                data-bs-target="#aboutModal">More of Us<i class="bi bi-info-circle" data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Learn more..."></i></button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" 
+id="aboutModal" 
+data-bs-backdrop="static" 
+data-bs-keyboard="false" 
+tabindex="-1" 
+aria-labelledby="aboutModalLabel" 
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-srollable">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="aboutModalLabel">More About Us</h5>
+            <nav id="about-content">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#2019" class="nav-link">2019</a></li>
+                    <li class="nav-item"><a href="#2020" class="nav-link">2020</a></li>
+                    <li class="nav-item"><a href="#2021" class="nav-link">2021</a></li>
+                    <li class="nav-item"><a href="#2022" class="nav-link">2022</a></li>
+                </ul>
+            </nav>
+            <button class="btn-close" 
+            type="button"
+            data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h4 id="2019">In 2019</h4>
+            <p>trained not less than 50 students who are doing well in trading as professionals
+                in the for rext market.
+            </p>
+            <h4 id="2020">In 2020</h4>
+            <p>we introduced free signals for our students and partners twice every week that 
+                has generated a lot of money for them to carter for their needs and invest in their careers
+            </p>
+            <h4 id="2021">In 2021</h4>
+            <p>we started our mentorship program where we mentor those that are directly registered via our
+                such that they do not experience any form of lost
+            </p>
+            <h4 id="2022">In 2022</h4>
+            <p>this year we have been able to train more than 100 students online and onsite and 80%
+                of them that adhere to our modus operandi are giving their testimonials to other people
+                which as a result is creating more people registering to be part of our team
+            </p>
+        </div>
+        <div class="modal-footer"><button class="btn btn-danger"
+            type="button"
+            data-bs-dismiss="modal">Close</button></div>
+    </div>
+</div>
+</div>
+    </section>
+    <!-- <header> about model content -->
+        <section id="blog" class="container mb-5 pt-4 id=blog">
+            <div class="row">
+                <div class="col-lg-6">
+                <h4 class="font-monospace my-5">BOOM 300 INDEX</h4>
+                <h3 class="display-1">Boom & Crash Index MACD Strategy (Complete Settings)</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm6 mb-5 mb-sm-3">
+                <div class="card shadow" style="width:18rem">
+                    <img src="images/chart1.jpg" alt="chart img" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Boom & Crash Index</h5>
+                        <p class="card-text text-primary">Boom 300</p>
+                        <a tabindex="0" class="btn btn-sm btn" style="background:#f9b01fec"
+                        role="button"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        title="Volatility 75 Index"
+                        data-bs-content="***For Boom 1000, Boom 500 and Boom 300 Indexes respectively!
+                        The trend is typically down!!!
+                        But! when they spike, it changes the direction to an uptrend Boom….
+                        ☝️☝️☝️
+                        As you can see from the figures above…!
+                        You noticed that! Both trends typically trend down!
+                        But when spikes come….☝️
+                        The trend will be bullish and that is how we catch spikes for free with boom and crash trading strategy like this one….☝️
+                        For Crash 1000, crash 500 and crash 300 Respectively! 
+                        The game changed.
+                        Why…Because….!
+                        In Crash Indexes, the market is typically trading in an uptrend by Default!!!
+                        But when it Comes to Crash Indexes…..☝️☝️☝️
+                        As far as spikes come….! they changed the trend in opposite directions
+                        That is Down Trend….">Boom 300</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm6 mb-5 mb-sm-3">
+                <div class="card shadow" style="width:18rem">
+                    <img src="images/chart8.jpg" alt="chart img" class="card-img-top" style="height:160px"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Boom & Crash Index</h5>
+                        <p class="card-text text-primary">Boom 500</p>
+                        <a tabindex="0" class="btn btn-sm btn" style="background:#f9b01fec"
+                        role="button"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        title="Strategies used to trade Boom 500 successfully"
+                        data-bs-content="Boom 500 and Crash 500 are synthetic indices aspect of forex trading, these are markets that ticks base on simulation from stocks, often times there are single future assets like Boom 500 which might be simulated by over 100 company's stocks, this is known as constituent so it's hard to study how to trick the market
+
+                        Does XM have boom 500 index?
+                        
+                        Why Trade S&P 500 ‏(US500) with XM? At XM we offer S&P 500 ‏(US500) as cash and futures CFDs. Our cash index CFDs are undated transactions that aim to replicate the cash price of the underlying index, and so they are adjusted for interest and dividends.
+                        
+                        What is the difference between boom 500 and Boom 1000?
+                        
+                        The Boom Index also comes in two types, the Boom 500 Index and the Boom 1000 Index. For the Boom 500 Index there is on average 1 spike in the price series every 500 ticks, and for the Boom 1000 series there is on average 1 spike in the price series every 1000 ticks.">Boom 500</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm6 mb-5 mb-sm-3">
+                <div class="card shadow" style="width:18rem">
+                    <img src="images/chart3.jpg" alt="chart img" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Boom & Crash Index</h5>
+                        <p class="card-text text-primary">Crash 300</p>
+                        <a tabindex="0" class="btn btn-sm btn" style="background:#f9b01fec"
+                        role="button"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        title="Strategies used to trade crash 300 successfully"
+                        data-bs-content="Trading boom and crash, if you use the right batch sizes, do not lead to a capital loss in a short time. For detailed information about how to find a broker that sells VIX Index (also known as the Greed / Fear Index) and Volatility Index trading, read our guide on predicting market crashes and what to do if you find yourself in a market crash. Let us now 
+                        turn to the strategies for boom / crash trading. I will explain two strategies.
+                        The strategic goal is to have at least 3 spikes per trade you make. The first strategy uses a special custom indicator to help you analyze the market. If the price action falls below the RSI-30 line shown in the chart below, you should buy the crash formation (third candle) and remain on the market for 3 pips.
+                        If you do not have a trading plan that uses all your knowledge, you will never succeed. In fact, the best way to make a profit is in day trading or swing trading. In any case, you never know which good and solid trading system is best for you as a trader.
+
+                        Make sure you note down the details of every trade you make and the reasons why you included your trade in your trade journal. You can then revisit your magazine and evaluate your trades to see how you are progressing. This makes it harder for brokers to play the trader off because the market is so volatile on its own.">Crash 300</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm6 mb-5 mb-sm-3">
+                <div class="card shadow" style="width:18rem">
+                    <img src="images/chart9.jpeg" alt="chart img" class="card-img-top" style="height:160px"/>
+                    <div class="card-body">
+                        <h5 class="card-title">Boom & Crash Index</h5>
+                        <p class="card-text text-primary" >Crash 500</p>
+                        <a tabindex="0" class="btn btn-sm btn" style="background:#f9b01fec"
+                        role="button"
+                        data-bs-toggle="popover"
+                        data-bs-trigger="focus"
+                        title="Strategies used to trade crash 500 successfully"
+                        data-bs-content="Just like any other form of trading, Crash 500 requires strategy. Some strategies used by traders include scaling, day trading, swing trading, and position trading. Before settling in a specific strategy, you need get to know your trading style, trading psychology,
+                         exposure, and experience. Learn your personality and gain trading knowledge.
+                         Most crash and boom traders begin as scalpers. The way the boom and crash market is structured, scalping seems like a great strategy. This is due to the spikes that occur in both boom and crash.
+
+                         Understanding Price action and the use of technical analysis tools can help boom and crash traders in scalping:  Some of the frequently use indicators includes: Relative strength index, MACD, moving averages, Fibonacci lines, stochastic Oscillator, Average Directional Index, Bollinger Bands, etc., 
+                         A combination of these tools helps traders make decisions on how to enter trades.">Crash 500</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!-- team -->
+    <section id="Services" class="container mb-5 pt-5">
+        <div class="row">
+            <div class="col-lg-6">
+            <h4 class="font-monospace my-5">What We Offer</h4>
+            <h3 class="display-1">Trading Strategy</h3>
+        </div>
+    </div>
+    <div class="row row cols-1 row-cols-sm-2 row-cols-xl-4">
+        <div class="col card shadow text-white bg-primary mb-5 mb-sm-3">
+            <div class="card-header text-white display-6 mt-2 shadow">
+                <i class="bi bi-gear-wide-connected"></i> Planning
+            </div>
+            <div class="card-body">
+               <p class="card-text">we make sure we plan every step of your trading style so that you can create a
+                 reliable and consistent boom&crash Trading system</p>
+               <div class="list-group mb-3">
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Boom&Crash
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Volatility 75 index
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex&Synthetic indices
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex trading only
+                </label>
+               </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://record.binary.com/_tWE1kJhwCe66tyDIijdDK2Nd7ZgqdRLk/1/" class="btn btn-outline-light">Get Started</a>                
+            </div>
+        </div>
+        <div class="col card shadow text-light mb-5 mb-5 mb-sm-3" style="background:#f9b01fec">
+            <div class="card-header text-dark display-6 mt-2 shadow">
+                <i class="bi bi-gem"></i> Goal
+            </div>
+            <div class="card-body">
+               <p class="card-text">our goal its for you to be an Independent trader with a fully Functional
+                 trading system that Generate money over time</p>
+               <div class="list-group mb-3">
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Boom&Crash
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Volatility 75 index
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex&Synthetic indices
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex trading only
+                </label>
+               </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://record.binary.com/_tWE1kJhwCe66tyDIijdDK2Nd7ZgqdRLk/1/" class="btn btn-outline-light">Get Started</a>                
+            </div>
+        </div>
+        <div class="col card shadow text-light bg-primary mb-5 mb-5 mb-sm-3">
+            <div class="card-header display-6 mt-2 shadow">
+                <i class="bi bi-gender-trans"></i>Research
+            </div>
+            <div class="card-body">
+               <p class="card-text">Through Research! we always find new trading styles and techniques 
+                that will help you to be consistent in this business</p>
+               <div class="list-group mb-3">
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Boom&Crash
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Volatility 75 index
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex&Synthetic indices
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex trading only
+                </label>
+               </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://record.binary.com/_tWE1kJhwCe66tyDIijdDK2Nd7ZgqdRLk/1/" class="btn btn-outline-light">Get Started</a>
+                
+            </div>
+        </div>
+        <div class="col card shadow text-light mb-5 mb-5 mb-sm-3" style="background:#f9b01fec">
+            <div class="card-header text-dark display-6 mt-2 shadow">
+                <i class="bi bi-pencil-square"></i> Solution
+            </div>
+            <div class="card-body">
+               <p class="card-text">we find and Optimise every business solution through many channels that are
+                 highly Effective and easy to use and reflicate</p>
+               <div class="list-group mb-3">
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Boom&Crash
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Volatility 75 index
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex&Synthetic indices
+                </label>
+                <label for="" class="list-group-item">
+                    <input type="checkbox" class="form-check-input me-1"/>Forex trading only
+                </label>
+               </div>
+            </div>
+            <div class="card-footer">
+                <a href="https://record.binary.com/_tWE1kJhwCe66tyDIijdDK2Nd7ZgqdRLk/1/" class="btn btn-outline-light">Get Started</a>
+                
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- footer -->
+    <footer id="Contact" class=" pt-3" style="background: #d8d7d7ec">
+        <div class="container">
+            <h4 class="text-primary text-decoration-underline font-monospace mb-3">Easy Trade Academy <img src="images/logo.jpg" alt="logo" width="30px"></a></h4>
+            <small class="fw-lighter">Get Great News, Tips&Tricks, Free Strategies, 
+                And Even Boom&Crash WEEKLY &MONTHLY Analysis ! On My Exclusive Blog, And Insight From Our Expert Team Daily.
+            </p>
+            <div class="row">
+                <div class="col container">
+                    <h5>Useful Links</h5>
+                    <ul>
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#Services" class="nav-link">Services</a></li>
+                        <li><a href="#blog" class="nav-link">Blog</a></li>
+                        <li><a href="#Contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col container">
+                    <h5>Product & services</h5>
+                    <ul>
+                        <li><a href="https://wa.me/message/X7L5WPSQYNKBI1" class="nav-link">Free Strategies</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="nav-link">Premium Strategies</a></li>
+                        <li><a href="https://t.me/Easytradeacademi" class="nav-link">Market Analysis</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="nav-link">Price Action</a></li>
+                        <li><a href="#about" class="nav-link">Terms And Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col container">
+                    <h5>Contact Us</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item"><i class="bi bi-house-door m-2 text-primary"></i>CBN Quaters Karu-abuja</li>
+                        <li class="list-group-item"><i class="bi bi-signpost-2 m-2 text-primary"></i>
+                             <a href="https://www.facebook.com/easytradeacademy" class="btn-social mb-2 me-2 text-primary"><i class="bi bi-facebook"></i></a>
+                             <a href="https://wa.me/message/X7L5WPSQYNKBI1" class="btn-social mb-2 me-2 text-primary"><i class="bi bi-whatsapp"></i></a>
+                             <a href="https://t.me/Easytradeacademi" class="btn-social mb-2 me-2 text-primary"><i class="bi bi-telegram"></i></a>
+                             <a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="btn-social mb-2 me-2 text-primary"><i class="bi bi-youtube"></i></a>
+                            </li>
+                        <li class="list-group-item"><i class="bi bi-telephone m-2 text-primary"></i>+2348036256798</li>
+                        <li class="list-group-item"><i class="bi bi-envelope m-2 text-primary"></i>easytradeacademy2@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-light text-center mt-3 p-3">
+            <div class="row">
+                <div class="col-sm-7">
+                    &copy;Copyright 2022
+                    <span class="font-monospace">. All rights Reserved</span>
+                </div>
+                <div class="col-sm-5">
+                    <a href="https://www.facebook.com/easytradeacademy" class="btn-social mb-2 me-2 text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="https://wa.me/message/X7L5WPSQYNKBI1" class="btn-social mb-2 me-2 text-white"><i class="bi bi-whatsapp"></i></a>
+                    <a href="" class="btn-social mb-2 me-2 text-white"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://t.me/Easytradeacademi" class="btn-social mb-2 me-2 text-white"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCaKjBdXDEZk6-_NbxCAdSxA" class="btn-social mb-2 me-2 text-white"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<script src="app.js"></script>
+</body>
+</html>
